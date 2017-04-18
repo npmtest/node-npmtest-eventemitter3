@@ -1,4 +1,7 @@
-# test coverage for  [eventemitter3 (v2.0.3)](https://github.com/primus/eventemitter3#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-eventemitter3.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-eventemitter3) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-eventemitter3.svg)](https://travis-ci.org/npmtest/node-npmtest-eventemitter3)
+# npmtest-eventemitter3
+
+#### test coverage for  [eventemitter3 (v2.0.3)](https://github.com/primus/eventemitter3#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-eventemitter3.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-eventemitter3) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-eventemitter3.svg)](https://travis-ci.org/npmtest/node-npmtest-eventemitter3)
+
 #### EventEmitter3 focuses on performance while maintaining a Node.js AND browser compatible interface.
 
 [![NPM](https://nodei.co/npm/eventemitter3.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/eventemitter3)
@@ -9,11 +12,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-eventemitter3/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-eventemitter3/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-eventemitter3/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-eventemitter3/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-eventemitter3/build/screenCapture.buildCi.browser.coverage.example.html.png)](https://npmtest.github.io/node-npmtest-eventemitter3/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-eventemitter3/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-eventemitter3/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-eventemitter3/build/screenCapture.buildCi.browser.test-report.html.png)](https://npmtest.github.io/node-npmtest-eventemitter3/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-eventemitter3/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-eventemitter3/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-eventemitter3/build/screenCapture.buildCi.browser.apidoc.html.png)](https://npmdoc.github.io/node-npmdoc-eventemitter3/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-eventemitter3/build/test-report.html](https://npmtest.github.io/node-npmtest-eventemitter3/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-eventemitter3/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-eventemitter3/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-eventemitter3/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-eventemitter3/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-eventemitter3/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-eventemitter3/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-eventemitter3/build/screenCapture.npmPackageListing.svg)
 
