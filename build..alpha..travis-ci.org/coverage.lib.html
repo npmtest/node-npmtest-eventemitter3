@@ -1,5 +1,7 @@
-<html lang="en"><head>
-    <title>Code coverage report for node-npmtest-eventemitter3/eventemitter3/index.js</title>
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for node-npmtest-eventemitter3/node_modules/eventemitter3/index.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -192,7 +194,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-eventemitter3">npmtest-eventemitter3 (v0.0.2)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-eventemitter3/eventemitter3/index.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-eventemitter3/node_modules/eventemitter3/index.js</span></h1>
     <h2>
         
         Statements: <span class="metric">17.05% <small>(22 / 129)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -208,11 +210,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> » <a href="index.html">node-npmtest-eventemitter3/eventemitter3/</a> » index.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-eventemitter3/node_modules/eventemitter3/</a> &#187; index.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tbody><tr><td class="line-count">1
+<tr><td class="line-count">1
 2
 3
 4
@@ -857,14 +859,14 @@ function Events() {}
 // character to make sure that the built-in object properties are not
 // overridden or used as an attack vector.
 //
-<span class="missing-if-branch" title="else path not taken">E</span>if (Object.create) {
+<span class="missing-if-branch" title="else path not taken" >E</span>if (Object.create) {
   Events.prototype = Object.create(null);
 &nbsp;
   //
   // This hack is needed because the `__proto__` property is still inherited in
   // some old browsers like Android 4, iPhone 5.1, Opera 11 and Safari 5.
   //
-  <span class="missing-if-branch" title="else path not taken">E</span>if (!new Events().__proto__) prefix = false;
+  <span class="missing-if-branch" title="else path not taken" >E</span>if (!new Events().__proto__) prefix = false;
 }
 &nbsp;
 /**
@@ -876,10 +878,10 @@ function Events() {}
  * @constructor
  * @api private
  */
-<span class="fstat-no" title="function not covered">function EE(fn, context, once) {</span>
-<span class="cstat-no" title="statement not covered">  this.fn = fn;</span>
-<span class="cstat-no" title="statement not covered">  this.context = context;</span>
-<span class="cstat-no" title="statement not covered">  this.once = once || false;</span>
+<span class="fstat-no" title="function not covered" >function EE(fn, context, once) {</span>
+<span class="cstat-no" title="statement not covered" >  this.fn = fn;</span>
+<span class="cstat-no" title="statement not covered" >  this.context = context;</span>
+<span class="cstat-no" title="statement not covered" >  this.once = once || false;</span>
 }
 &nbsp;
 /**
@@ -889,9 +891,9 @@ function Events() {}
  * @constructor
  * @api public
  */
-<span class="fstat-no" title="function not covered">function EventEmitter() {</span>
-<span class="cstat-no" title="statement not covered">  this._events = new Events();</span>
-<span class="cstat-no" title="statement not covered">  this._eventsCount = 0;</span>
+<span class="fstat-no" title="function not covered" >function EventEmitter() {</span>
+<span class="cstat-no" title="statement not covered" >  this._events = new Events();</span>
+<span class="cstat-no" title="statement not covered" >  this._eventsCount = 0;</span>
 }
 &nbsp;
 /**
@@ -901,22 +903,22 @@ function Events() {}
  * @returns {Array}
  * @api public
  */
-EventEmitter.prototype.eventNames = <span class="fstat-no" title="function not covered">function eventNames() {</span>
-<span class="cstat-no" title="statement not covered">  var names = []</span>
+EventEmitter.prototype.eventNames = <span class="fstat-no" title="function not covered" >function eventNames() {</span>
+<span class="cstat-no" title="statement not covered" >  var names = []</span>
     , events
     , name;
 &nbsp;
-<span class="cstat-no" title="statement not covered">  if (this._eventsCount === 0) <span class="cstat-no" title="statement not covered">return names;</span></span>
+<span class="cstat-no" title="statement not covered" >  if (this._eventsCount === 0) <span class="cstat-no" title="statement not covered" >return names;</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  for (name in (events = this._events)) {</span>
-<span class="cstat-no" title="statement not covered">    if (has.call(events, name)) <span class="cstat-no" title="statement not covered">names.push(prefix ? name.slice(1) : name);</span></span>
+<span class="cstat-no" title="statement not covered" >  for (name in (events = this._events)) {</span>
+<span class="cstat-no" title="statement not covered" >    if (has.call(events, name)) <span class="cstat-no" title="statement not covered" >names.push(prefix ? name.slice(1) : name);</span></span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered">  if (Object.getOwnPropertySymbols) {</span>
-<span class="cstat-no" title="statement not covered">    return names.concat(Object.getOwnPropertySymbols(events));</span>
+<span class="cstat-no" title="statement not covered" >  if (Object.getOwnPropertySymbols) {</span>
+<span class="cstat-no" title="statement not covered" >    return names.concat(Object.getOwnPropertySymbols(events));</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered">  return names;</span>
+<span class="cstat-no" title="statement not covered" >  return names;</span>
 };
 &nbsp;
 /**
@@ -927,19 +929,19 @@ EventEmitter.prototype.eventNames = <span class="fstat-no" title="function not c
  * @returns {Array|Boolean}
  * @api public
  */
-EventEmitter.prototype.listeners = <span class="fstat-no" title="function not covered">function listeners(event, exists) {</span>
-<span class="cstat-no" title="statement not covered">  var evt = prefix ? prefix + event : event</span>
+EventEmitter.prototype.listeners = <span class="fstat-no" title="function not covered" >function listeners(event, exists) {</span>
+<span class="cstat-no" title="statement not covered" >  var evt = prefix ? prefix + event : event</span>
     , available = this._events[evt];
 &nbsp;
-<span class="cstat-no" title="statement not covered">  if (exists) <span class="cstat-no" title="statement not covered">return !!available;</span></span>
-<span class="cstat-no" title="statement not covered">  if (!available) <span class="cstat-no" title="statement not covered">return [];</span></span>
-<span class="cstat-no" title="statement not covered">  if (available.fn) <span class="cstat-no" title="statement not covered">return [available.fn];</span></span>
+<span class="cstat-no" title="statement not covered" >  if (exists) <span class="cstat-no" title="statement not covered" >return !!available;</span></span>
+<span class="cstat-no" title="statement not covered" >  if (!available) <span class="cstat-no" title="statement not covered" >return [];</span></span>
+<span class="cstat-no" title="statement not covered" >  if (available.fn) <span class="cstat-no" title="statement not covered" >return [available.fn];</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  for (var i = 0, l = available.length, ee = new Array(l); i &lt; l; i++) {</span>
-<span class="cstat-no" title="statement not covered">    ee[i] = available[i].fn;</span>
+<span class="cstat-no" title="statement not covered" >  for (var i = 0, l = available.length, ee = new Array(l); i &lt; l; i++) {</span>
+<span class="cstat-no" title="statement not covered" >    ee[i] = available[i].fn;</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered">  return ee;</span>
+<span class="cstat-no" title="statement not covered" >  return ee;</span>
 };
 &nbsp;
 /**
@@ -949,56 +951,56 @@ EventEmitter.prototype.listeners = <span class="fstat-no" title="function not co
  * @returns {Boolean} `true` if the event had listeners, else `false`.
  * @api public
  */
-EventEmitter.prototype.emit = <span class="fstat-no" title="function not covered">function emit(event, a1, a2, a3, a4, a5) {</span>
-<span class="cstat-no" title="statement not covered">  var evt = prefix ? prefix + event : event;</span>
+EventEmitter.prototype.emit = <span class="fstat-no" title="function not covered" >function emit(event, a1, a2, a3, a4, a5) {</span>
+<span class="cstat-no" title="statement not covered" >  var evt = prefix ? prefix + event : event;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  if (!this._events[evt]) <span class="cstat-no" title="statement not covered">return false;</span></span>
+<span class="cstat-no" title="statement not covered" >  if (!this._events[evt]) <span class="cstat-no" title="statement not covered" >return false;</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  var listeners = this._events[evt]</span>
+<span class="cstat-no" title="statement not covered" >  var listeners = this._events[evt]</span>
     , len = arguments.length
     , args
     , i;
 &nbsp;
-<span class="cstat-no" title="statement not covered">  if (listeners.fn) {</span>
-<span class="cstat-no" title="statement not covered">    if (listeners.once) <span class="cstat-no" title="statement not covered">this.removeListener(event, listeners.fn, undefined, true);</span></span>
+<span class="cstat-no" title="statement not covered" >  if (listeners.fn) {</span>
+<span class="cstat-no" title="statement not covered" >    if (listeners.once) <span class="cstat-no" title="statement not covered" >this.removeListener(event, listeners.fn, undefined, true);</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">    switch (len) {</span>
-      case 1: <span class="cstat-no" title="statement not covered">return listeners.fn.call(listeners.context), true;</span>
-      case 2: <span class="cstat-no" title="statement not covered">return listeners.fn.call(listeners.context, a1), true;</span>
-      case 3: <span class="cstat-no" title="statement not covered">return listeners.fn.call(listeners.context, a1, a2), true;</span>
-      case 4: <span class="cstat-no" title="statement not covered">return listeners.fn.call(listeners.context, a1, a2, a3), true;</span>
-      case 5: <span class="cstat-no" title="statement not covered">return listeners.fn.call(listeners.context, a1, a2, a3, a4), true;</span>
-      case 6: <span class="cstat-no" title="statement not covered">return listeners.fn.call(listeners.context, a1, a2, a3, a4, a5), true;</span>
+<span class="cstat-no" title="statement not covered" >    switch (len) {</span>
+      case 1: <span class="cstat-no" title="statement not covered" >return listeners.fn.call(listeners.context), true;</span>
+      case 2: <span class="cstat-no" title="statement not covered" >return listeners.fn.call(listeners.context, a1), true;</span>
+      case 3: <span class="cstat-no" title="statement not covered" >return listeners.fn.call(listeners.context, a1, a2), true;</span>
+      case 4: <span class="cstat-no" title="statement not covered" >return listeners.fn.call(listeners.context, a1, a2, a3), true;</span>
+      case 5: <span class="cstat-no" title="statement not covered" >return listeners.fn.call(listeners.context, a1, a2, a3, a4), true;</span>
+      case 6: <span class="cstat-no" title="statement not covered" >return listeners.fn.call(listeners.context, a1, a2, a3, a4, a5), true;</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered">    for (i = 1, args = new Array(len -1); i &lt; len; i++) {</span>
-<span class="cstat-no" title="statement not covered">      args[i - 1] = arguments[i];</span>
+<span class="cstat-no" title="statement not covered" >    for (i = 1, args = new Array(len -1); i &lt; len; i++) {</span>
+<span class="cstat-no" title="statement not covered" >      args[i - 1] = arguments[i];</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered">    listeners.fn.apply(listeners.context, args);</span>
+<span class="cstat-no" title="statement not covered" >    listeners.fn.apply(listeners.context, args);</span>
   } else {
-<span class="cstat-no" title="statement not covered">    var length = listeners.length</span>
+<span class="cstat-no" title="statement not covered" >    var length = listeners.length</span>
       , j;
 &nbsp;
-<span class="cstat-no" title="statement not covered">    for (i = 0; i &lt; length; i++) {</span>
-<span class="cstat-no" title="statement not covered">      if (listeners[i].once) <span class="cstat-no" title="statement not covered">this.removeListener(event, listeners[i].fn, undefined, true);</span></span>
+<span class="cstat-no" title="statement not covered" >    for (i = 0; i &lt; length; i++) {</span>
+<span class="cstat-no" title="statement not covered" >      if (listeners[i].once) <span class="cstat-no" title="statement not covered" >this.removeListener(event, listeners[i].fn, undefined, true);</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">      switch (len) {</span>
-        case 1: <span class="cstat-no" title="statement not covered">listeners[i].fn.call(listeners[i].context); <span class="cstat-no" title="statement not covered"></span>break;</span>
-        case 2: <span class="cstat-no" title="statement not covered">listeners[i].fn.call(listeners[i].context, a1); <span class="cstat-no" title="statement not covered"></span>break;</span>
-        case 3: <span class="cstat-no" title="statement not covered">listeners[i].fn.call(listeners[i].context, a1, a2); <span class="cstat-no" title="statement not covered"></span>break;</span>
-        case 4: <span class="cstat-no" title="statement not covered">listeners[i].fn.call(listeners[i].context, a1, a2, a3); <span class="cstat-no" title="statement not covered"></span>break;</span>
+<span class="cstat-no" title="statement not covered" >      switch (len) {</span>
+        case 1: <span class="cstat-no" title="statement not covered" >listeners[i].fn.call(listeners[i].context); <span class="cstat-no" title="statement not covered" ></span>break;</span>
+        case 2: <span class="cstat-no" title="statement not covered" >listeners[i].fn.call(listeners[i].context, a1); <span class="cstat-no" title="statement not covered" ></span>break;</span>
+        case 3: <span class="cstat-no" title="statement not covered" >listeners[i].fn.call(listeners[i].context, a1, a2); <span class="cstat-no" title="statement not covered" ></span>break;</span>
+        case 4: <span class="cstat-no" title="statement not covered" >listeners[i].fn.call(listeners[i].context, a1, a2, a3); <span class="cstat-no" title="statement not covered" ></span>break;</span>
         default:
-<span class="cstat-no" title="statement not covered">          if (!args) <span class="cstat-no" title="statement not covered">for (j = 1, args = new Array(len -1); j &lt; len; j++) {</span></span>
-<span class="cstat-no" title="statement not covered">            args[j - 1] = arguments[j];</span>
+<span class="cstat-no" title="statement not covered" >          if (!args) <span class="cstat-no" title="statement not covered" >for (j = 1, args = new Array(len -1); j &lt; len; j++) {</span></span>
+<span class="cstat-no" title="statement not covered" >            args[j - 1] = arguments[j];</span>
           }
 &nbsp;
-<span class="cstat-no" title="statement not covered">          listeners[i].fn.apply(listeners[i].context, args);</span>
+<span class="cstat-no" title="statement not covered" >          listeners[i].fn.apply(listeners[i].context, args);</span>
       }
     }
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered">  return true;</span>
+<span class="cstat-no" title="statement not covered" >  return true;</span>
 };
 &nbsp;
 /**
@@ -1010,15 +1012,15 @@ EventEmitter.prototype.emit = <span class="fstat-no" title="function not covered
  * @returns {EventEmitter} `this`.
  * @api public
  */
-EventEmitter.prototype.on = <span class="fstat-no" title="function not covered">function on(event, fn, context) {</span>
-<span class="cstat-no" title="statement not covered">  var listener = new EE(fn, context || this)</span>
+EventEmitter.prototype.on = <span class="fstat-no" title="function not covered" >function on(event, fn, context) {</span>
+<span class="cstat-no" title="statement not covered" >  var listener = new EE(fn, context || this)</span>
     , evt = prefix ? prefix + event : event;
 &nbsp;
-<span class="cstat-no" title="statement not covered">  if (!this._events[evt]) <span class="cstat-no" title="statement not covered">this._events[evt] = listener, this._eventsCount++;</span></span>
-  else <span class="cstat-no" title="statement not covered">if (!this._events[evt].fn) <span class="cstat-no" title="statement not covered">this._events[evt].push(listener);</span></span>
-  else <span class="cstat-no" title="statement not covered">this._events[evt] = [this._events[evt], listener];</span>
+<span class="cstat-no" title="statement not covered" >  if (!this._events[evt]) <span class="cstat-no" title="statement not covered" >this._events[evt] = listener, this._eventsCount++;</span></span>
+  else <span class="cstat-no" title="statement not covered" >if (!this._events[evt].fn) <span class="cstat-no" title="statement not covered" >this._events[evt].push(listener);</span></span>
+  else <span class="cstat-no" title="statement not covered" >this._events[evt] = [this._events[evt], listener];</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  return this;</span>
+<span class="cstat-no" title="statement not covered" >  return this;</span>
 };
 &nbsp;
 /**
@@ -1030,15 +1032,15 @@ EventEmitter.prototype.on = <span class="fstat-no" title="function not covered">
  * @returns {EventEmitter} `this`.
  * @api public
  */
-EventEmitter.prototype.once = <span class="fstat-no" title="function not covered">function once(event, fn, context) {</span>
-<span class="cstat-no" title="statement not covered">  var listener = new EE(fn, context || this, true)</span>
+EventEmitter.prototype.once = <span class="fstat-no" title="function not covered" >function once(event, fn, context) {</span>
+<span class="cstat-no" title="statement not covered" >  var listener = new EE(fn, context || this, true)</span>
     , evt = prefix ? prefix + event : event;
 &nbsp;
-<span class="cstat-no" title="statement not covered">  if (!this._events[evt]) <span class="cstat-no" title="statement not covered">this._events[evt] = listener, this._eventsCount++;</span></span>
-  else <span class="cstat-no" title="statement not covered">if (!this._events[evt].fn) <span class="cstat-no" title="statement not covered">this._events[evt].push(listener);</span></span>
-  else <span class="cstat-no" title="statement not covered">this._events[evt] = [this._events[evt], listener];</span>
+<span class="cstat-no" title="statement not covered" >  if (!this._events[evt]) <span class="cstat-no" title="statement not covered" >this._events[evt] = listener, this._eventsCount++;</span></span>
+  else <span class="cstat-no" title="statement not covered" >if (!this._events[evt].fn) <span class="cstat-no" title="statement not covered" >this._events[evt].push(listener);</span></span>
+  else <span class="cstat-no" title="statement not covered" >this._events[evt] = [this._events[evt], listener];</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  return this;</span>
+<span class="cstat-no" title="statement not covered" >  return this;</span>
 };
 &nbsp;
 /**
@@ -1051,47 +1053,47 @@ EventEmitter.prototype.once = <span class="fstat-no" title="function not covered
  * @returns {EventEmitter} `this`.
  * @api public
  */
-EventEmitter.prototype.removeListener = <span class="fstat-no" title="function not covered">function removeListener(event, fn, context, once) {</span>
-<span class="cstat-no" title="statement not covered">  var evt = prefix ? prefix + event : event;</span>
+EventEmitter.prototype.removeListener = <span class="fstat-no" title="function not covered" >function removeListener(event, fn, context, once) {</span>
+<span class="cstat-no" title="statement not covered" >  var evt = prefix ? prefix + event : event;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  if (!this._events[evt]) <span class="cstat-no" title="statement not covered">return this;</span></span>
-<span class="cstat-no" title="statement not covered">  if (!fn) {</span>
-<span class="cstat-no" title="statement not covered">    if (--this._eventsCount === 0) <span class="cstat-no" title="statement not covered">this._events = new Events();</span></span>
-    else <span class="cstat-no" title="statement not covered">delete this._events[evt];</span>
-<span class="cstat-no" title="statement not covered">    return this;</span>
+<span class="cstat-no" title="statement not covered" >  if (!this._events[evt]) <span class="cstat-no" title="statement not covered" >return this;</span></span>
+<span class="cstat-no" title="statement not covered" >  if (!fn) {</span>
+<span class="cstat-no" title="statement not covered" >    if (--this._eventsCount === 0) <span class="cstat-no" title="statement not covered" >this._events = new Events();</span></span>
+    else <span class="cstat-no" title="statement not covered" >delete this._events[evt];</span>
+<span class="cstat-no" title="statement not covered" >    return this;</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered">  var listeners = this._events[evt];</span>
+<span class="cstat-no" title="statement not covered" >  var listeners = this._events[evt];</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  if (listeners.fn) {</span>
-<span class="cstat-no" title="statement not covered">    if (</span>
+<span class="cstat-no" title="statement not covered" >  if (listeners.fn) {</span>
+<span class="cstat-no" title="statement not covered" >    if (</span>
          listeners.fn === fn
       &amp;&amp; (!once || listeners.once)
       &amp;&amp; (!context || listeners.context === context)
     ) {
-<span class="cstat-no" title="statement not covered">      if (--this._eventsCount === 0) <span class="cstat-no" title="statement not covered">this._events = new Events();</span></span>
-      else <span class="cstat-no" title="statement not covered">delete this._events[evt];</span>
+<span class="cstat-no" title="statement not covered" >      if (--this._eventsCount === 0) <span class="cstat-no" title="statement not covered" >this._events = new Events();</span></span>
+      else <span class="cstat-no" title="statement not covered" >delete this._events[evt];</span>
     }
   } else {
-<span class="cstat-no" title="statement not covered">    for (var i = 0, events = [], length = listeners.length; i &lt; length; i++) {</span>
-<span class="cstat-no" title="statement not covered">      if (</span>
+<span class="cstat-no" title="statement not covered" >    for (var i = 0, events = [], length = listeners.length; i &lt; length; i++) {</span>
+<span class="cstat-no" title="statement not covered" >      if (</span>
            listeners[i].fn !== fn
         || (once &amp;&amp; !listeners[i].once)
         || (context &amp;&amp; listeners[i].context !== context)
       ) {
-<span class="cstat-no" title="statement not covered">        events.push(listeners[i]);</span>
+<span class="cstat-no" title="statement not covered" >        events.push(listeners[i]);</span>
       }
     }
 &nbsp;
     //
     // Reset the array, or remove it completely if we have no more listeners.
     //
-<span class="cstat-no" title="statement not covered">    if (events.length) <span class="cstat-no" title="statement not covered">this._events[evt] = events.length === 1 ? events[0] : events;</span></span>
-    else <span class="cstat-no" title="statement not covered">if (--this._eventsCount === 0) <span class="cstat-no" title="statement not covered">this._events = new Events();</span></span>
-    else <span class="cstat-no" title="statement not covered">delete this._events[evt];</span>
+<span class="cstat-no" title="statement not covered" >    if (events.length) <span class="cstat-no" title="statement not covered" >this._events[evt] = events.length === 1 ? events[0] : events;</span></span>
+    else <span class="cstat-no" title="statement not covered" >if (--this._eventsCount === 0) <span class="cstat-no" title="statement not covered" >this._events = new Events();</span></span>
+    else <span class="cstat-no" title="statement not covered" >delete this._events[evt];</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered">  return this;</span>
+<span class="cstat-no" title="statement not covered" >  return this;</span>
 };
 &nbsp;
 /**
@@ -1101,21 +1103,21 @@ EventEmitter.prototype.removeListener = <span class="fstat-no" title="function n
  * @returns {EventEmitter} `this`.
  * @api public
  */
-EventEmitter.prototype.removeAllListeners = <span class="fstat-no" title="function not covered">function removeAllListeners(event) {</span>
-<span class="cstat-no" title="statement not covered">  var evt;</span>
+EventEmitter.prototype.removeAllListeners = <span class="fstat-no" title="function not covered" >function removeAllListeners(event) {</span>
+<span class="cstat-no" title="statement not covered" >  var evt;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  if (event) {</span>
-<span class="cstat-no" title="statement not covered">    evt = prefix ? prefix + event : event;</span>
-<span class="cstat-no" title="statement not covered">    if (this._events[evt]) {</span>
-<span class="cstat-no" title="statement not covered">      if (--this._eventsCount === 0) <span class="cstat-no" title="statement not covered">this._events = new Events();</span></span>
-      else <span class="cstat-no" title="statement not covered">delete this._events[evt];</span>
+<span class="cstat-no" title="statement not covered" >  if (event) {</span>
+<span class="cstat-no" title="statement not covered" >    evt = prefix ? prefix + event : event;</span>
+<span class="cstat-no" title="statement not covered" >    if (this._events[evt]) {</span>
+<span class="cstat-no" title="statement not covered" >      if (--this._eventsCount === 0) <span class="cstat-no" title="statement not covered" >this._events = new Events();</span></span>
+      else <span class="cstat-no" title="statement not covered" >delete this._events[evt];</span>
     }
   } else {
-<span class="cstat-no" title="statement not covered">    this._events = new Events();</span>
-<span class="cstat-no" title="statement not covered">    this._eventsCount = 0;</span>
+<span class="cstat-no" title="statement not covered" >    this._events = new Events();</span>
+<span class="cstat-no" title="statement not covered" >    this._eventsCount = 0;</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered">  return this;</span>
+<span class="cstat-no" title="statement not covered" >  return this;</span>
 };
 &nbsp;
 //
@@ -1127,8 +1129,8 @@ EventEmitter.prototype.addListener = EventEmitter.prototype.on;
 //
 // This function doesn't apply anymore.
 //
-EventEmitter.prototype.setMaxListeners = <span class="fstat-no" title="function not covered">function setMaxListeners() {</span>
-<span class="cstat-no" title="statement not covered">  return this;</span>
+EventEmitter.prototype.setMaxListeners = <span class="fstat-no" title="function not covered" >function setMaxListeners() {</span>
+<span class="cstat-no" title="statement not covered" >  return this;</span>
 };
 &nbsp;
 //
@@ -1144,16 +1146,15 @@ EventEmitter.EventEmitter = EventEmitter;
 //
 // Expose the module.
 //
-<span class="missing-if-branch" title="else path not taken">E</span>if ('undefined' !== typeof module) {
+<span class="missing-if-branch" title="else path not taken" >E</span>if ('undefined' !== typeof module) {
   module.exports = EventEmitter;
 }
 &nbsp;
 &nbsp;</pre></td></tr>
-</tbody></table></pre>
+</table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Sat Apr 15 2017 20:03:08 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 18 2017 21:22:42 GMT+0000 (UTC)</div>
 </div>
-
-
-</body></html>
+</body>
+</html>
